@@ -1,1 +1,0 @@
-package com.weiwan.box.module.crm.dal.mysql.permission;

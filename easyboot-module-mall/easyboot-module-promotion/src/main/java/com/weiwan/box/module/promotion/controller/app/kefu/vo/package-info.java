@@ -1,1 +1,0 @@
-package com.weiwan.box.module.promotion.controller.app.kefu.vo;
