@@ -1,0 +1,3 @@
+com.weiwan.box.framework.mq.redis.config.EasybootRedisMQProducerAutoConfiguration
+com.weiwan.box.framework.mq.redis.config.EasybootRedisMQConsumerAutoConfiguration
+com.weiwan.box.framework.mq.rabbitmq.config.EasybootRabbitMQAutoConfiguration

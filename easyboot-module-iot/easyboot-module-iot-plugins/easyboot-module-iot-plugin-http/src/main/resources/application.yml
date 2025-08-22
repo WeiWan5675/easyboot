@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: easyboot-module-iot-plugin-http
+
+easyboot:
+  iot:
+    plugin:
+      common:
+        upstream-url: http://127.0.0.1:48080
+        downstream-port: 8093
+        plugin-key: easyboot-module-iot-plugin-http
+      http:
+        server-port: 8092

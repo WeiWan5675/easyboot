@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: easyboot-module-iot-plugin-emqx
+
+easyboot:
+  iot:
+    plugin:
+      common:
+        upstream-url: http://127.0.0.1:48080
+        downstream-port: 8100
+        plugin-key: easyboot-module-iot-plugin-emqx
+      emqx:
+        mqtt-host: 127.0.0.1
+        mqtt-port: 1883
+        mqtt-ssl: false
+        mqtt-username: easyboot
+        mqtt-password: 123456
+        mqtt-topics:
+          - "/sys/#"
+        auth-port: 8101

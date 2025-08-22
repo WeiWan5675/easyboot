@@ -1,0 +1,2 @@
+com.weiwan.box.framework.redis.config.EasybootRedisAutoConfiguration
+com.weiwan.box.framework.redis.config.EasybootCacheAutoConfiguration

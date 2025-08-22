@@ -1,0 +1,2 @@
+com.weiwan.box.framework.tracer.config.EasybootTracerAutoConfiguration
+com.weiwan.box.framework.tracer.config.EasybootMetricsAutoConfiguration

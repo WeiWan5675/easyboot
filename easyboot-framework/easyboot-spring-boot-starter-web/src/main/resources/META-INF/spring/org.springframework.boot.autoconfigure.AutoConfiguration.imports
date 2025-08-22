@@ -1,0 +1,7 @@
+com.weiwan.box.framework.apilog.config.EasybootApiLogAutoConfiguration
+com.weiwan.box.framework.jackson.config.EasybootJacksonAutoConfiguration
+com.weiwan.box.framework.swagger.config.EasybootSwaggerAutoConfiguration
+com.weiwan.box.framework.web.config.EasybootWebAutoConfiguration
+com.weiwan.box.framework.xss.config.EasybootXssAutoConfiguration
+com.weiwan.box.framework.banner.config.EasybootBannerAutoConfiguration
+com.weiwan.box.framework.encrypt.config.EasybootApiEncryptAutoConfiguration

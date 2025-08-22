@@ -1,0 +1,2 @@
+com.weiwan.box.framework.quartz.config.EasybootQuartzAutoConfiguration
+com.weiwan.box.framework.quartz.config.EasybootAsyncAutoConfiguration

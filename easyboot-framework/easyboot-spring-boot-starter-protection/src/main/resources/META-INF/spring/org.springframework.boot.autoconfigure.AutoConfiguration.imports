@@ -1,0 +1,4 @@
+com.weiwan.box.framework.idempotent.config.EasybootIdempotentConfiguration
+com.weiwan.box.framework.lock4j.config.EasybootLock4jConfiguration
+com.weiwan.box.framework.ratelimiter.config.EasybootRateLimiterConfiguration
+com.weiwan.box.framework.signature.config.EasybootApiSignatureAutoConfiguration

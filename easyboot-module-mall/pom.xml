@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>easyboot</artifactId>
+        <groupId>com.weiwan.box</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>easyboot-module-mall</artifactId>
+    <packaging>pom</packaging>
+
+    <name>${project.artifactId}</name>
+
+    <description>
+        商城大模块，由 product 商品、promotion 营销、trade 交易、statistics 统计等组成
+    </description>
+    <modules>
+        <module>easyboot-module-product</module>
+        <module>easyboot-module-promotion</module>
+        <module>easyboot-module-trade</module>
+        <module>easyboot-module-statistics</module>
+        <!--
+            特殊：为什么会有 easyboot-module-trade-api 呢？
+                easyboot-module-promotion 和 easyboot-module-trade 之间相互循环依赖，所以抽出 easyboot-module-trade-api 模块，这样：
+                1. easyboot-module-promotion 依赖 easyboot-module-trade-api
+                2. easyboot-module-trade 依赖 easyboot-module-promotion
+            从而不存在相互（循环）依赖，即 easyboot-module-trade => easyboot-module-promotion => easyboot-module-trade-api
+         -->
+        <module>easyboot-module-trade-api</module>
+    </modules>
+
+</project>

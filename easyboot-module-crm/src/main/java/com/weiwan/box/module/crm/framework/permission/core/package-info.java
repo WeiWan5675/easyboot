@@ -1,0 +1,1 @@
+package com.weiwan.box.module.crm.framework.permission.core;

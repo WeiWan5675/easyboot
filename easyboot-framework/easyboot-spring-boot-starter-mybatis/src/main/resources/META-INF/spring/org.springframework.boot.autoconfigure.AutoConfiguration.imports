@@ -1,0 +1,3 @@
+com.weiwan.box.framework.datasource.config.EasybootDataSourceAutoConfiguration
+com.weiwan.box.framework.mybatis.config.EasybootMybatisAutoConfiguration
+com.weiwan.box.framework.translate.config.EasybootTranslateAutoConfiguration

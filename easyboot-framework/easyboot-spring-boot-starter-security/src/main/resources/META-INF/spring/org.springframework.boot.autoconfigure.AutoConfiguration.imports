@@ -1,0 +1,3 @@
+com.weiwan.box.framework.security.config.EasybootSecurityAutoConfiguration
+com.weiwan.box.framework.security.config.EasybootWebSecurityConfigurerAdapter
+com.weiwan.box.framework.operatelog.config.EasybootOperateLogConfiguration
