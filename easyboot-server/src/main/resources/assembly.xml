@@ -1,0 +1,60 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.1.0 http://maven.apache.org/xsd/assembly-2.1.0.xsd">
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <id>release</id>
+    <includeBaseDirectory>true</includeBaseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <directory>${basedir}/../docker-compose</directory>
+<!--            <excludes><exclude>**/*</exclude></excludes>-->
+            <outputDirectory>./</outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>${basedir}/../easyboot-ui/apps/web-antd/dist</directory>
+            <!--            <excludes><exclude>**/*</exclude></excludes>-->
+            <outputDirectory>./easyboot-ui/dist</outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>${basedir}/../sql</directory>
+            <!--            <excludes><exclude>**/*</exclude></excludes>-->
+            <outputDirectory>./bin/sql</outputDirectory>
+        </fileSet>
+    </fileSets>
+    <files>
+        <file>
+            <source>${basedir}/../easyboot-ui/Dockerfile</source>
+            <outputDirectory>./easyboot-ui</outputDirectory>
+        </file>
+        <file>
+            <source>${basedir}/Dockerfile</source>
+            <outputDirectory>./easyboot-server</outputDirectory>
+        </file>
+        <file>
+            <source>target/easyboot-server.jar</source>
+            <outputDirectory>./easyboot-server/lib</outputDirectory>
+        </file>
+        <file>
+            <source>${basedir}/../script/shell/deploy.sh</source>
+            <outputDirectory>./bin</outputDirectory>
+        </file>
+        <file>
+            <source>src/main/resources/application.yaml</source>
+            <outputDirectory>./conf</outputDirectory>
+        </file>
+        <file>
+            <source>src/main/resources/application-dev.yaml</source>
+            <outputDirectory>./conf</outputDirectory>
+        </file>
+        <file>
+            <source>src/main/resources/application-local.yaml</source>
+            <outputDirectory>./conf</outputDirectory>
+        </file>
+        <file>
+            <source>src/main/resources/logback-spring.xml</source>
+            <outputDirectory>./conf</outputDirectory>
+        </file>
+    </files>
+</assembly>

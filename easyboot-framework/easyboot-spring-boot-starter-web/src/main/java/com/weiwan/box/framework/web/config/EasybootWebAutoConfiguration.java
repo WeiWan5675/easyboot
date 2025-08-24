@@ -25,6 +25,7 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @AutoConfiguration
@@ -39,11 +40,13 @@ public class EasybootWebAutoConfiguration implements WebMvcConfigurer {
     @Value("${spring.application.name}")
     private String applicationName;
 
+
     @Override
     public void configurePathMatch(PathMatchConfigurer configurer) {
         configurePathMatch(configurer, webProperties.getAdminApi());
         configurePathMatch(configurer, webProperties.getAppApi());
     }
+
 
     /**
      * 设置 API 前缀，仅仅匹配 controller 包下的

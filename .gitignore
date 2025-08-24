@@ -52,3 +52,6 @@ application-my.yaml
 
 /easyboot-ui-app/unpackage/
 **/.DS_Store
+/easyboot-ui/node
+/**/**/node_modules
+/**/node_modules

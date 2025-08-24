@@ -15,24 +15,14 @@
         <!-- 各种 module 拓展 -->
         <module>easyboot-module-system</module>
         <module>easyboot-module-infra</module>
-<!--        <module>easyboot-module-member</module>-->
-<!--        <module>easyboot-module-bpm</module>-->
-<!--        <module>easyboot-module-report</module>-->
-<!--        <module>easyboot-module-mp</module>-->
-<!--        <module>easyboot-module-pay</module>-->
-<!--        <module>easyboot-module-mall</module>-->
-<!--        <module>easyboot-module-crm</module>-->
-<!--        <module>easyboot-module-erp</module>-->
-<!--        <module>easyboot-module-ai</module>-->
-<!--        <module>easyboot-module-iot</module>-->
+        <module>easyboot-ui</module>
     </modules>
 
     <name>${project.artifactId}</name>
-    <description>芋道项目基础脚手架</description>
-    <url>https://github.com/YunaiV/ruoyi-vue-pro</url>
+    <description>EasyBoot - 基础脚手架</description>
 
     <properties>
-        <revision>2025.08-SNAPSHOT</revision>
+        <revision>1.0.0</revision>
         <!-- Maven 相关 -->
         <java.version>21</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
