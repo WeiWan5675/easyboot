@@ -12,6 +12,7 @@ export const overridesPreferences = defineOverridesPreferences({
     accessMode: 'backend',
     name: import.meta.env.VITE_APP_TITLE,
     enableRefreshToken: true,
+    defaultHomePath: '/workspace'
   },
   footer: {
     /** 默认关闭 footer 页脚，因为有一定遮挡 */
